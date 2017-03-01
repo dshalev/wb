@@ -1,0 +1,14 @@
+{
+  "sql": "SELECT * FROM '#'",
+  "ruleDisabled": false,
+  "actions": [{
+      "dynamoDB": {
+          "tableName": "WiseBreezeHouse",
+          "roleArn": "arn:aws:iam::671596520541:role/dynamo-connect-role",
+          "hashKeyField": "state",
+          "hashKeyValue": "${state(2)}",
+          "rangeKeyField": "timestamp",
+          "rangeKeyValue": "${timestamp()}"
+      }
+  }]
+}

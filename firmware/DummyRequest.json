@@ -1,0 +1,11 @@
+{
+  "state": {
+    "desired": {
+     "rooms": {
+        "room_2": {
+          "set_point": "100"
+        }
+      }
+    }
+  }
+}
